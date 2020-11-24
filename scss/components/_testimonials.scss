@@ -1,9 +1,8 @@
 .testimonials-list {
-  // border: 1px solid;
   list-style: none;
   color: $color-neutral-white;
 
-  @media only screen and (min-width: $bp-lg) {
+  @media only screen and (min-width: $bp-md) {
     grid-column: 1/-1;
     grid-row: 2/3;
 
@@ -22,17 +21,23 @@
   padding: 3.2rem;
   line-height: 1.6;
 
-  @media only screen and (min-width: $bp-lg) {
+  @media only screen and (min-width: $bp-md) {
     width: 32%;
   }
 
   &:not(:last-child) {
     margin-bottom: 1.5rem;
+
+    @media only screen and (min-width: $bp-md) {
+      margin-bottom: unset;
+      margin-right: 2rem;
+    }
   }
 
   &:first-child {
     @media only screen and (min-width: $bp-lg) {
       margin-bottom: 5rem;
+      margin-right: unset;
     }
   }
 

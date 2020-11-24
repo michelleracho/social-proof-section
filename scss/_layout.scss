@@ -4,7 +4,7 @@
   position: relative;
   padding-bottom: 10rem;
 
-  @media only screen and (min-width: $bp-lg) {
+  @media only screen and (min-width: $bp-md) {
     max-width: $bp-xl;
     padding-bottom: unset;
     padding: 10rem;

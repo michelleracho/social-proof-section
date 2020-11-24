@@ -52,7 +52,7 @@ body {
   padding-bottom: 10rem;
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1070px) {
   .container {
     max-width: 1440px;
     padding-bottom: unset;
@@ -133,6 +133,12 @@ body {
   padding: 0 1.7rem;
 }
 
+@media only screen and (min-width: 1070px) {
+  .heading {
+    margin-top: 1rem;
+  }
+}
+
 @media only screen and (min-width: 1240px) {
   .heading {
     -ms-grid-column: 1;
@@ -156,6 +162,12 @@ body {
   color: #502050;
   margin: auto 3rem;
   margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 1070px) {
+  .heading--main {
+    font-size: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1240px) {
@@ -197,9 +209,14 @@ body {
   margin-bottom: 5rem;
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1070px) {
   .rating {
     margin-bottom: unset;
+  }
+}
+
+@media only screen and (min-width: 1240px) {
+  .rating {
     padding: 1.5rem 3.5rem;
   }
 }
@@ -265,7 +282,7 @@ body {
   color: white;
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1070px) {
   .testimonials-list {
     grid-column: 1/-1;
     -ms-grid-row: 2;
@@ -302,7 +319,7 @@ body {
   line-height: 1.6;
 }
 
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1070px) {
   .testimonial {
     width: 32%;
   }
@@ -312,9 +329,17 @@ body {
   margin-bottom: 1.5rem;
 }
 
+@media only screen and (min-width: 1070px) {
+  .testimonial:not(:last-child) {
+    margin-bottom: unset;
+    margin-right: 2rem;
+  }
+}
+
 @media only screen and (min-width: 1240px) {
   .testimonial:first-child {
     margin-bottom: 5rem;
+    margin-right: unset;
   }
 }
 
