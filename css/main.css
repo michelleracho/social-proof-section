@@ -52,19 +52,22 @@ body {
   padding-bottom: 10rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .container {
-    border: 1px solid;
     max-width: 1440px;
     padding-bottom: unset;
-    padding: 7rem;
+    padding: 10rem;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.2);
+    overflow: hidden;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (auto)[2];
         grid-template-rows: repeat(2, auto);
-    grid-gap: 3rem;
+    grid-gap: 5rem;
   }
 }
 
@@ -77,22 +80,31 @@ body {
   background-repeat: no-repeat;
 }
 
-@media only screen and (min-width: 992px) {
-  .container::before, .container::after {
-    display: none;
-  }
-}
-
 .container::before {
   background-image: url(../images/bg-pattern-top-mobile.svg);
   top: -1rem;
   height: 25rem;
 }
 
+@media only screen and (min-width: 1240px) {
+  .container::before {
+    background-image: url(../images/bg-pattern-top-desktop.svg);
+    top: 0;
+  }
+}
+
 .container::after {
   background-image: url(../images/bg-pattern-bottom-mobile.svg);
   bottom: -7rem;
   height: 50rem;
+}
+
+@media only screen and (min-width: 1240px) {
+  .container::after {
+    background-image: url(../images/bg-pattern-bottom-desktop.svg);
+    bottom: 0;
+    right: -20%;
+  }
 }
 
 .attribution {
@@ -103,7 +115,7 @@ body {
   margin-bottom: 1rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .attribution {
     position: absolute;
     bottom: 0;
@@ -121,7 +133,7 @@ body {
   padding: 0 1.7rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .heading {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
@@ -146,7 +158,7 @@ body {
   margin-bottom: 2rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .heading--main {
     font-size: 3.5rem;
     margin: unset;
@@ -167,7 +179,7 @@ body {
   text-align: center;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .ratings-list {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -185,32 +197,32 @@ body {
   margin-bottom: 5rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .rating {
     margin-bottom: unset;
     padding: 1.5rem 3.5rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .rating:first-child {
     margin-right: 7rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .rating:nth-child(2) {
     margin: auto 3.5rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .rating:last-child {
     margin-left: 7rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .rating figure {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -236,7 +248,7 @@ body {
   margin-bottom: 0.7rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .rating__stars {
     margin-bottom: unset;
     margin-right: 2rem;
@@ -253,7 +265,7 @@ body {
   color: white;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .testimonials-list {
     grid-column: 1/-1;
     -ms-grid-row: 2;
@@ -290,7 +302,7 @@ body {
   line-height: 1.6;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .testimonial {
     width: 32%;
   }
@@ -300,19 +312,19 @@ body {
   margin-bottom: 1.5rem;
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .testimonial:first-child {
     margin-bottom: 5rem;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .testimonial:nth-child(2) {
     margin: 2.5rem auto;
   }
 }
 
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 1240px) {
   .testimonial:last-child {
     margin-top: 5rem;
   }

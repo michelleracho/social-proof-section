@@ -33,14 +33,12 @@
   &:first-child {
     @media only screen and (min-width: $bp-lg) {
       margin-bottom: 5rem;
-      // margin-right: 2rem;
     }
   }
 
   &:nth-child(2) {
     @media only screen and (min-width: $bp-lg) {
       margin: 2.5rem auto;
-      // margin-right: 2rem;
     }
   }
 
