@@ -1,0 +1,26 @@
+.ratings-list {
+  // border: 1px solid;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.rating {
+  background-color: $color-neutral-light;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5rem;
+  }
+
+  &__stars {
+    margin-bottom: 0.7rem;
+  }
+
+  &__caption {
+    color: $color-primary-magenta;
+    font-weight: 700;
+  }
+}

@@ -66,19 +66,47 @@ body {
 .heading {
   text-align: center;
   margin-top: 7.5rem;
-  margin-bottom: 3rem;
-  padding: 0 1.8rem;
+  margin-bottom: 5rem;
+  padding: 0 1.7rem;
 }
 
 .heading--main {
   font-size: 2.5rem;
   font-weight: 700;
   color: #502050;
-  margin: auto 2.8rem;
+  margin: auto 2.9rem;
   margin-bottom: 2rem;
 }
 
 .heading--sub {
   color: #937b92;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.ratings-list {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.rating {
+  background-color: #f7f2f7;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 5rem;
+}
+
+.rating:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.rating__stars {
+  margin-bottom: 0.7rem;
+}
+
+.rating__caption {
+  color: #502050;
+  font-weight: 700;
 }
 /*# sourceMappingURL=main.css.map */
