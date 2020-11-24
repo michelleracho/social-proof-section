@@ -4,9 +4,8 @@
   text-align: center;
 
   @media only screen and (min-width: $bp-lg) {
-    grid-column: 2/4;
+    grid-column: 2/3;
     grid-row: 1/2;
-    padding-left: 30%;
   }
 }
 
@@ -18,6 +17,7 @@
 
   @media only screen and (min-width: $bp-lg) {
     margin-bottom: unset;
+    padding: 1.5rem 3.5rem;
   }
 
   &:first-child {
@@ -40,9 +40,10 @@
 
   figure {
     @media only screen and (min-width: $bp-lg) {
-      @include flexCenter;
+      display: flex;
       flex-direction: row;
       justify-content: flex-start;
+      align-items: baseline;
     }
   }
 

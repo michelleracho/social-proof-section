@@ -8,9 +8,9 @@
     border: 1px solid;
     max-width: $bp-xl;
     padding-bottom: unset;
-    padding: 5rem;
+    padding: 7rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     grid-gap: 3rem;
   }
