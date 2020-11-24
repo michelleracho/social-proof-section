@@ -1,7 +1,31 @@
 .container {
   @include flexCenter;
   max-width: 375px;
-  border: 1px solid;
+  position: relative;
+  padding-bottom: 10rem;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  &::before {
+    background-image: url(../images/bg-pattern-top-mobile.svg);
+    top: -1rem;
+    height: 25rem;
+  }
+
+  &::after {
+    // border: 1px solid;
+    background-image: url(../images/bg-pattern-bottom-mobile.svg);
+    bottom: -7rem;
+    height: 50rem;
+  }
 }
 
 // footer
