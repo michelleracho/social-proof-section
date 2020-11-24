@@ -1,8 +1,19 @@
 .container {
   @include flexCenter;
-  max-width: 375px;
+  max-width: $bp-xs;
   position: relative;
   padding-bottom: 10rem;
+
+  @media only screen and (min-width: $bp-lg) {
+    border: 1px solid;
+    max-width: $bp-xl;
+    padding-bottom: unset;
+    padding: 5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-gap: 3rem;
+  }
 
   &::before,
   &::after {
@@ -12,6 +23,10 @@
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+
+    @media only screen and (min-width: $bp-lg) {
+      display: none;
+    }
   }
 
   &::before {
@@ -35,6 +50,11 @@
   position: relative;
   margin-top: 5rem;
   margin-bottom: 1rem;
+
+  @media only screen and (min-width: $bp-lg) {
+    position: absolute;
+    bottom: 0;
+  }
 
   a {
     color: hsl(228, 45%, 44%);

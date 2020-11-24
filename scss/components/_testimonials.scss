@@ -2,6 +2,14 @@
   // border: 1px solid;
   list-style: none;
   color: $color-neutral-white;
+
+  @media only screen and (min-width: $bp-lg) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+
+    @include flexCenter;
+    flex-direction: row;
+  }
 }
 
 .testimonial {
@@ -16,6 +24,26 @@
 
   &:not(:last-child) {
     margin-bottom: 1.5rem;
+  }
+
+  &:first-child {
+    @media only screen and (min-width: $bp-lg) {
+      margin-bottom: 5rem;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &:nth-child(2) {
+    @media only screen and (min-width: $bp-lg) {
+      margin: 2.5rem auto;
+      margin-right: 1.5rem;
+    }
+  }
+
+  &:last-child {
+    @media only screen and (min-width: $bp-lg) {
+      margin-top: 5rem;
+    }
   }
 
   &__photo {
