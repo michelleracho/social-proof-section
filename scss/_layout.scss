@@ -1,14 +1,15 @@
 .container {
   @include flexCenter;
   max-width: 375px;
+  border: 1px solid;
 }
 
 // footer
 .attribution {
   font-size: 11px;
   text-align: center;
-  position: absolute;
-  bottom: 0;
+  position: relative;
+  margin-top: 5rem;
   margin-bottom: 1rem;
 
   a {
